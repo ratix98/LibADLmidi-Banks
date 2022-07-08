@@ -7,4 +7,6 @@ A Simple home for every bank I modified for one OPL3 chip with the opl3 bank edi
 
 # Why
 
-it is fun and there are no multiple opl3 cards that i know of and most modern devices I have seen use a single chip
+it is fun and there are no multiple opl3 cards that i know of and most modern devices I have seen use a single chip.
+
+OPL2 is also supported to an extent.
