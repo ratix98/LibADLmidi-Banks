@@ -8,6 +8,9 @@ For proper sound output in the shareware titles when using a soundblaster 16 or 
 
 set dmxoption=-opl3
 
+for doom and heretic you need to add -file genmidi.op2
+
+
 This works in dosbox under emulation as well.
 
 # Why
