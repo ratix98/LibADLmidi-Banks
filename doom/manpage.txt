@@ -1,0 +1,396 @@
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+NAME
+       deutex, deusf - do things with wad files
+
+SYNOPSIS
+       deutex -?|-h|-help|--help
+       deutex --version
+       deutex -man
+       deutex [options] -make [dirctivs.txt] out.wad
+       deutex [options] -wadir in.wad
+       deutex [options] -check in.wad
+       deutex [options] -usedtex [in.wad]
+       deutex [options] -usedidx [in.wad]
+       deutex [options] -unused in.wad
+       deutex [options] -xtract in.wad [dirctivs.txt]
+       deutex [options] -get entry [in.wad]
+       deutex [options] -pknormal [in.wad [out.txt]]
+       deutex [options] -pkgrahix [in.wad [out.txt]]
+       deutex [options] -add incomplete.wad out.wad
+       deutex [options] -append incomplete.wad
+       deutex [options] -join incomplete.wad in.wad
+       deutex [options] -merge in.wad
+       deutex [options] -restor
+       deutex [options] -as sprite.wad
+       deutex [options] -af flats.wad
+
+       deusf -?|-h|-help|--help
+       deusf --version
+       deusf options
+
+DESCRIPTION
+       DeuTex  is  a  wad  composer  for Doom, Heretic, Hexen and
+       Strife. It can be used to extract the lumps of a  wad  and
+       save  them  as  individual  files or the reverse, and much
+       more.
+
+       When extracting a lump to a file, it does  not  just  copy
+       the  raw  data,  it  converts  it to an appropriate format
+       (such as PPM for graphics, Sun audio for  samples,  etc.).
+       Conversely, when it reads files for inclusion in pwads, it
+       does the necessary conversions (for example, from  PPM  to
+       Doom picture format).
+
+       DeuSF is a trimmed version of DeuTex that is used to merge
+       sprites and flats from a pwad into an iwad, which is some­
+       times  necessary  because Doom and its breed do not handle
+       sprites in pwads well.
+
+       See docsrc/dtexman6.txt for more information on DeuTex and
+       DeuSF.
+
+OPTIONS
+       -?            Print list of options.
+
+       -h            Same as above.
+
+
+
+DeuTex 4.4.0                2000-01-05                          1
+
+
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+       -help         Same as above.
+
+       --help        Same as above.
+
+       -man          Print  list of options in troff -man format.
+
+       --version     Print version number and exit  successfully.
+
+       -syntax       Print the syntax of wad creation directives.
+
+       -win doom data info select colour
+                     (opt.) WinTex shortcut.
+
+       -wim doom select
+                     (opt.) WinTex shortcut.
+
+       -debug        Debug mode.
+
+       -di name      (opt.) Debug identification of entry.
+
+       -musid        (opt.) Use old music identification  method.
+
+       -overwrite    (opt.) Overwrite all.
+
+       -wtx iwad     (opt.) WinTex shortcut.
+
+       -doom dir     (opt.) Indicate the directory of Doom.
+
+       -doom2 dir    (opt.) Indicate the directory of Doom II.
+
+       -doom02 dir   (opt.)  Indicate the directory of Doom alpha
+                     0.2.
+
+       -doom04 dir   (opt.) Indicate the directory of Doom  alpha
+                     0.4.
+
+       -doom05 dir   (opt.)  Indicate the directory of Doom alpha
+                     0.5.
+
+       -doompr dir   (opt.) Indicate the  directory  of  Doom  PR
+                     pre-beta.
+
+       -heretic dir  (opt.) Indicate the directory of Heretic.
+
+       -hexen dir    (opt.) Indicate the directory of Hexen.
+
+       -strife dir   (opt.) Indicate the directory of Strife.
+
+       -strife10 dir (opt.) Indicate the directory of Strife 1.0.
+
+       -dir dir      (opt.) Indicate the working directory.
+
+       -deu          (opt.) Add 64k of junk to workaround  a  bug
+                     of DEU 5.21.
+
+
+
+DeuTex 4.4.0                2000-01-05                          2
+
+
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+       -rgb r g b    (opt.)   Specify   the   transparent  colour
+                     (default 0/47/47).
+
+       -gif          (opt.) Save pictures as GIF (.gif).
+
+       -bmp          (opt.) Save pictures as BMP (.bmp).
+
+       -ppm          (opt.) Save pictures  as  rawbits  (P6)  PPM
+                     (.ppm).
+
+       -au           (opt.) Save sound as Sun audio (.au).
+
+       -wav          (opt.) Save sound as wave (.wav).
+
+       -voc          (opt.) Save sound as voc (.voc).
+
+       -fullsnd      (opt.)  Save  sound  lumps  beyond  declared
+                     length.
+
+       -levels       (opt.) Select levels.
+
+       -lumps        (opt.) Select lumps.
+
+       -sounds       (opt.) Select sounds.
+
+       -musics       (opt.) Select musics.
+
+       -textures     (opt.) Select textures.
+
+       -graphics     (opt.) Select graphics.
+
+       -sneas        (opt.) Select sneas (sneaps and sneats).
+
+       -sneaps       (opt.) Select sneaps.
+
+       -sneats       (opt.) Select sneats.
+
+       -s_end        (opt.) Use S_END for sprites, not SS_END.
+
+       -george       Same as above.
+
+       -sprites      (opt.) Select sprites.
+
+       -patches      (opt.) Select patches.
+
+       -flats        (opt.) Select flats.
+
+       -v0           (opt.) Set verbosity level to 0.
+
+       -v1           (opt.) Set verbosity level to 1.
+
+       -v2           (opt.) Set verbosity level to 2 (default).
+
+       -v3           (opt.) Set verbosity level to 3.
+
+
+
+DeuTex 4.4.0                2000-01-05                          3
+
+
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+       -v4           (opt.) Set verbosity level to 4.
+
+       -v5           (opt.) Set verbosity level to 5.
+
+       -be           (opt.)  Assume  all  wads  are  big   endian
+                     (default LE).
+
+       -le           (opt.)  Assume  all  wads  are little endian
+                     (default).
+
+       -ibe          (opt.) Input wads are  big  endian  (default
+                     LE).
+
+       -ile          (opt.)   Input   wads   are   little  endian
+                     (default).
+
+       -obe          (opt.) Create big endian wads (default  LE).
+
+       -ole          (opt.)  Create little endian wads (default).
+
+       -ipf {alpha|normal|pr}
+                     (opt.) Picture format (default is "normal").
+
+       -tf {nameless|none|normalstrife11}
+                     (opt.) Texture format (default is "normal").
+
+       -itf {nameless|none|normalstrife11}
+                     (opt.)  Input  texture  format  (default  is
+                     "normal").
+
+       -otf {nameless|none|normalstrife11}
+                     (opt.)  Output  texture  format  (default is
+                     "normal").
+
+       -itl {none|normal|textures}
+                     (opt.) Texture lump (default is "normal").
+
+       -iwad         (opt.) Compose iwad, not pwad.
+
+       -make [dirctivs.txt] out.wad
+                     Make a pwad, from the creation directives.
+
+       -build [dirctivs.txt] out.wad
+                     Same as above.
+
+       -create [dirctivs.txt] out.wad
+                     Same as above.
+
+       -wadir in.wad List and identify entries in a wad.
+
+       -check in.wad Check the textures.
+
+       -test in.wad  Same as above.
+
+
+
+
+DeuTex 4.4.0                2000-01-05                          4
+
+
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+       -usedtex [in.wad]
+                     List textures used in all levels.
+
+       -usedidx [in.wad]
+                     Colour index usage statistics.
+
+       -unused in.wad
+                     Find unused spaces in a wad.
+
+       -xtract [in.wad [dirctivs.txt]]
+                     Extract some/all entries from a wad.
+
+       -extract [in.wad [dirctivs.txt]]
+                     Same as above.
+
+       -get entry [in.wad]
+                     Get a wad entry from main wad or in.wad.
+
+       -pknormal [in.wad [out.txt]]
+                     Detect identical normal.
+
+       -pkgfx [in.wad [out.txt]]
+                     Detect identical graphics.
+
+       -add incomplete.wad out.wad
+                     Add sprites & flats of a pwad  to  those  of
+                     Doom.
+
+       -append incomplete.wad
+                     Append sprites & flats of Doom to a pwad.
+
+       -join incomplete.wad in.wad
+                     Append sprites & flats of Doom to a pwad.
+
+       -merge in.wad Merge doom.wad and a pwad.
+
+       -restore      Restore doom.wad and the pwad.
+
+       -as sprite.wad
+                     Append all sprites to the wad.
+
+       -af flats.wad Append all floors/ceilings to the wad.
+
+ENVIRONMENT
+       DOOMWADDIR
+              The  directory where the iwad resides. The value of
+              this environment variable is overridden  by  -main,
+              -doom and friends.
+
+BUGS
+       See TODO.
+
+LEGAL
+       DeuTex   is   copyright   ©  1994-1995  Olivier  Montanuy,
+
+
+
+DeuTex 4.4.0                2000-01-05                          5
+
+
+
+
+
+DEUTEX(6)                                               DEUTEX(6)
+
+
+       copyright © 1999-2000 André Majorel.
+
+       Most of this program is GPL'd but some of it is  available
+       under  other  licenses. This program is distributed in the
+       hope that it will be useful,  but  WITHOUT  ANY  WARRANTY;
+       without  even  the  implied warranty of MERCHANTABILITY or
+       FITNESS FOR A PARTICULAR PURPOSE.  See  LICENSE  for  spe­
+       cific  information  and  copyright notices. All trademarks
+       are the property of their owners.
+
+AUTHOR
+       The original author of DeuTex is Olivier Montanuy.
+
+       From 1994 to 1996, DeuTex was maintained by  Olivier  Mon­
+       tanuy  <Olivier.Montanuy@wanadoo.fr>  with  help  from Per
+       Allansson   <c91peral@und.ida.liu.se>,   James    Bonfield
+       <jkb@mrc-molecular-biology.cambridge.ac.uk>,        Sharon
+       Bowles, Mark Mathews <mark.mathews@channel1.com> and Chuck
+       Rossi.  The  original  manual was written by Kevin McGrail
+       <hevkev@sfo.com>.
+
+       As of version 4 (1999), the maintainer  is  André  Majorel
+       <amajorel@teaser.fr>.
+
+       Questions  and  bug  reports should be sent to the current
+       maintainer, not to the original authors.
+
+SEE ALSO
+       man -k doom wad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DeuTex 4.4.0                2000-01-05                          6
+
+
