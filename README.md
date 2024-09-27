@@ -18,3 +18,4 @@ This works in dosbox under emulation as well.
 it is fun and there are no multiple opl3 cards that i know of and most modern devices I have seen use a single chip.
 
 OPL2 is also supported to an extent.
+Known good OPL2 banks that should work just fine are QFG4AD.wopl & MASHOPL2.wopl which are all ripped from sierra games or created from scratch after spending countless hours just futzing with the bank editor program and comparing to other instruments from adlib.
