@@ -19,3 +19,5 @@ it is fun and there are no multiple opl3 cards that i know of and most modern de
 
 OPL2 is also supported to an extent.
 Known good OPL2 banks that should work just fine are QFG4AD.wopl & MASHOPL2.wopl which are all ripped from sierra games or created from scratch after spending countless hours just futzing with the bank editor program and comparing to other instruments from adlib.
+
+Doom & Heretic folder added. to use simply download and put into your doom, doom2, and heretic directory and launch the game via the example "Doom -file genmidi.op2" and it should work as long as adlib is selected in the setup. this should work on all opl2 enabled cards along with opl3.
