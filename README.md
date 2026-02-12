@@ -1,9 +1,9 @@
 # libADLmidi-Banks
-Banks used for adlmidi that I modified for use on a Real OPL3 enabled card.
+Banks used for adlmidi that I modified for use on a Soundcards with an OPL3 chip.
 
 # What this is
 
-A Simple home for every bank I modified for one OPL3 chip with the opl3 bank editor by Wohlstand. Each bank is heavily modified from DMXOPL from sneakernets so a few instruments will probably sound a little more hollow or weak. The results though seem to work out while listening. Housed here are Shareware versions of a few games that demostrate what the opl3 can do.
+A Simple home for every bank I modified for the OPL3. I used the opl3 bank editor by Wohlstand. Each bank is heavily modified from existing sets so a few instruments will probably sound a little more hollow or weak. Alot of the wopl files i have uploaded here are not the greatest but it shows alot of improvements were made. The results though seem to work out while listening to it on vintage hardware. Housed here are Shareware versions of a few games that demostrate what the opl3 can do.
 For proper sound output in the shareware titles when using a soundblaster 16 or compatible you must set the dmxoption with the following on the commandline otherwise note cuts will happen.
 
 set dmxoption=-opl3
